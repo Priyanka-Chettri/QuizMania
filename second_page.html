@@ -16,27 +16,27 @@
       </h1>
       <div class="bg-white rounded-xl mt-[50px] w-[800px] flex flex-col items-center">
         <div class="bg-[#4D869C] mt-[20px] rounded-lg h-[180px] w-[700px] flex justify-center items-center ">
-          <p class="text-white text-xl px-6">Which Soccer team won the FIFA World Cup the first time in 2019 please give the correct answer?</p>
+          <p class="text-white text-xl px-6" id="question">Q<span id="count">1</span>. Which Soccer team won the FIFA World Cup the first time in 2019 please give the correct answer?</p>
         </div>
-        <div class="mt-[50px] flex flex-col gap-5 justify-center">
-          <div class="border h-[50px] w-[500px] flex items-center justify-center rounded-md hover:scale-105 transition-all  hover:bg-[#7AB2B2]  hover:text-white">Spain</div>
-          <div class="border h-[50px] w-[500px] flex items-center justify-center rounded-md hover:bg-[#7AB2B2] hover:text-white">Japan</div>
-          <div class="border h-[50px] w-[500px] flex items-center justify-center rounded-md hover:bg-[#7AB2B2] hover:text-white">Brazil</div>
-          <div class="border h-[50px] w-[500px] flex items-center justify-center  rounded-md hover:bg-[#7AB2B2] hover:text-white">Argentina</div>
+        <div class="mt-[50px] flex flex-col gap-5 justify-center " id= "buttonContainer">
+          <div class="border h-[50px] w-[500px] flex items-center justify-center rounded-md hover:scale-105 transition-all  hover:bg-[#7AB2B2]  hover:text-white" id="option1">Spain</div>
+          <div class="border h-[50px] w-[500px] flex items-center justify-center rounded-md hover:bg-[#7AB2B2] hover:text-white" id="option2">Japan</div>
+          <div class="border h-[50px] w-[500px] flex items-center justify-center rounded-md hover:bg-[#7AB2B2] hover:text-white" id="option3">Brazil</div>
+          <div class="border h-[50px] w-[500px] flex items-center justify-center  rounded-md hover:bg-[#7AB2B2] hover:text-white" id="option4">Argentina</div>
         </div>
        
         <div class="flex mt-[80px] space-x-6 mb-[50px] ">
           <div class="flex justify-center bg-[#CDE8E5] w-[150px]  h-[40px]  rounded-md hover:scale-105"> 
-            <button class="">
-            Answered 1/10
+            <button id="answered">
+            Answered <span id="number">1</span>/10
           </button></div>
-          <div class="flex justify-center bg-[#CDE8E5] w-[150px]  h-[40px]  rounded-md hover:scale-105"> 
+         <!--<div class="flex justify-center bg-[#CDE8E5] w-[150px]  h-[40px]  rounded-md hover:scale-105"> 
             <button class="">
             Skip
             <i class="fa-solid fa-xmark" style="color: #4d869c;"></i>          
-          </button></div>
+          </button></div>-->
           <div class="bg-[#CDE8E5] w-[150px]  h-[40px]  rounded-md flex justify-center hover:scale-105" >
-            <button class="" >
+            <button class=""  id="next">
               Next
               <i class="fa-solid fa-arrow-right" style="color: #4d869c;"></i>
             </button>

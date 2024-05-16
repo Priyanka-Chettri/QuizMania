@@ -1,0 +1,7 @@
+history:https://opentdb.com/api.php?amount=10&category=23&difficulty=easy&type=multiple
+Sports: https://opentdb.com/api.php?mount=10&category=21&difficulty=easy&type=multiple
+GK: https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple
+Geography:https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple
+Politics:https://opentdb.com/api.php?amount=10&category=24&difficulty=easy&type=multiple
+Art:https://opentdb.com/api.php?amount=10&category=25&difficulty=easy&type=multiple
+Any Category:https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple
