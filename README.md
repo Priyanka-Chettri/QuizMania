@@ -12,3 +12,5 @@ My learnings 🚀:
 🔹Developed mobile-first responsive design
 🔹Utilised local storage effectively
 🔹Managed project structure for multi-page apps
+
+![Quiz Mania Screenshot](HomePage.png)
