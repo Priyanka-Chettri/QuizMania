@@ -13,4 +13,7 @@ My learnings 🚀:
 🔹Utilised local storage effectively
 🔹Managed project structure for multi-page apps
 
-![Quiz Mania Screenshot](HomePage.png)
+![Home Page Screenshot](QuizPage.png)
+![Quiz Page Screenshot](HomePage.png)
+![Point Page Screenshot](PointPage.png)
+
