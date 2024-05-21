@@ -1,13 +1,13 @@
-QuizMania
+####QuizMania
 
-Quiz Mania- A quiz app with multiple categories, built using HTML, Tailwind CSS, and JavaScript. 📱💻
+**Quiz Mania**- A quiz app with multiple categories, built using HTML, Tailwind CSS, and JavaScript. 📱💻
 
-Features:
+##Features:
  🔹 Attempt quizzes multiple times
  🔹 Clean, user-friendly design 
  🔹 Fully mobile responsive
 
-My learnings 🚀:
+##My learnings 🚀:
 🔹Leveraged Tailwind CSS for elegant design
 🔹Developed mobile-first responsive design
 🔹Utilised local storage effectively
