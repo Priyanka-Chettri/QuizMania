@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMania</title>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#EEF7FF]">
+    <div class="flex flex-col items-center  mt-[50px]" >
+        <div class="bg-[#4D869C] border-[#4D869C] w-[600px] rounded-lg p-3  text-center text-black font-bold border-[5px] shadow-neumorphic2 " >
+                <h1 class="text-[50px] text-white">QUIZ MANIA
+                </h1>
+        </div>
+        <div class="flex flex-col items-center mt-[65px] ">
+            <input class=" border border-black h-[50px] w-[500px] text-center rounded-lg " type="text" placeholder="Enter your name" id="name" required>
+            <p class="mt-[60px] font-bold text-[22px] mb-[20px]">Select one of your category</p>
+            <div class="flex gap-[20px]" id="button-div">
+                <button class="border bg-[#7AB2B2] w-[100px] h-[40px] rounded-[5px] text-white hover:bg-[#4D869C] hover:scale-105 transition-all shadow-neumorphic2" id="history">History</button>
+                <button class="border bg-[#7AB2B2] w-[100px] h-[40px] rounded-[5px] text-white hover:bg-[#4D869C] hover:scale-105 transition-all shadow-neumorphic2" id="sports">Sports</button>
+                <button class="border bg-[#7AB2B2] w-[180px] h-[40px] px-3 rounded-[5px] text-white hover:bg-[#4D869C] hover:scale-105 transition-all shadow-neumorphic2" id="gk">General Knowledge</button>
+                <button class="border bg-[#7AB2B2] w-[100px] h-[40px] rounded-[5px] text-white hover:bg-[#4D869C] hover:scale-105 transition-all shadow-neumorphic2" id="geography">Geography</button>
+                <button class="border bg-[#7AB2B2] w-[100px] h-[40px] rounded-[5px] text-white hover:bg-[#4D869C] hover:scale-105 transition-all shadow-neumorphic2" id="Politics">Politics</button>
+                <button class="border bg-[#7AB2B2] w-[100px] h-[40px] rounded-[5px] text-white hover:bg-[#4D869C] hover:scale-105 transition-all shadow-neumorphic2" id="arts">Art</button>
+                <button class="border bg-[#7AB2B2] w-[120px] h-[40px] rounded-[5px] text-white hover:bg-[#4D869C] hover:scale-105 transition-all shadow-neumorphic" id="any">Any Category</button>
+            </div>
+        </div>
+        <button class="mt-[100px] h-[50px] w-[220px]  bg-[#CDE8E5] font-bold rounded-[5px]  shadow-neumorphic hover:scale-105" id="get-started" >
+         Get Started     
+         <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+    </div>
+</body>
+<script src="script1.js">
+</script>
+</html>

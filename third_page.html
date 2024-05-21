@@ -6,22 +6,28 @@
     <title>Points Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#EEF7FF]">
+<body class="bg-[url('confettiGif.gif')] flex flex-col justify-between h-screen">
     <div class="flex items-center justify-center h-screen">
-        <div class="flex flex-col items-center border rounded-xl h-[550px] w-[570px] bg-[#7AB2B2]">
-        <div class="font-bold text-white text-[22px]  pt-[35px] mb-[20px]" > Congratulations Quiz completed ! </div>
-        <div class="flex justify-center items-center mt-[30px] ">
-            <div class="font-bold text-white text-[30px]">Total Points </div>
-            <div class="h-[100px] w-[110px]"><img  src="coin.png"></div>
+        <div class="flex flex-col items-center border rounded-xl h-[350px] w-[300px] md:h-[550px] md:w-[570px] bg-[#7AB2B2]">
+        <div class="font-bold text-white text-[22px]  pt-[35px] mb-[20px] text-[22px] md:text-[50px]" > Congratulations </div>
+        <div class="font-bold text-white text-[15px] md:text-[22px]  mb-[10px] ">Quiz completed !</div>
+        <div class="flex justify-center items-center md:mt-[25px] mt-[15px] ">
+            <div class="font-bold text-white text-[12px] md:text-[30px] pl-[20px]">Your Score </div>
+            <div class="h-[50px] w-[60px]"><img  src="coin.png"></div>
         </div>
-        <div class=" bg-white mt-[70px] border rounded-md h-[50px] w-[170px] flex items-center justify-center font-bold text-[18px] text-black">
-        <span id="pointNo"> 8 </span>  Points 
+        <div class=" bg-white  mt-[15px] md:mt-[30px] border rounded-md h-[30px] w-[120px] text-[10px] md:h-[50px] md:w-[170px] flex items-center justify-center font-bold md:text-[18px] text-black">
+        <span  class="mr-[9px]" id="pointNo"> 0 </span>    Points 
         </div>
-        <div class="border mt-[120px] h-[35px] w-[150px] rounded-md flex justify-center items-center bg-[#4D869C] text-white hover:scale-105">
-            <button id="gobackbtn">Restart</button>
+        <div class="border md:mt-[80px] mt-[40px] h-[35px] w-[130px] text-[10px] md:h-[45px] md:w-[150px] md:text-[18px] rounded-md flex justify-center items-center bg-[#4D869C] text-white hover:scale-105">
+            <button  class="font-bold" id="gobackbtn">Restart</button>
         </div>
        </div>     
     </div>
+    <footer>
+        <div class="flex justify-center items-center relative">
+          <p>Made by <a href="https://x.com/Pryancawithan_i" target="_blank" class="font-bold hover:scale-105 transition-all">Priyanka</a> <a href="https://x.com/Pryancawithan_i" target="_blank"><img class="h-[30px] w-[35px] absolute z-10 -top-6 right-100 left-100 hover:scale-105 transition-all" src="icon.png"></a></p>  
+        </div>
+    </footer>
 </body>
 <script src="script3.js">
 

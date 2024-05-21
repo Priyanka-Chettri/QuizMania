@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Page</title>
+    <!-- <link href="./output.css" rel="stylesheet" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body class="bg-[#EEF7FF]">
+    <div class="flex flex-col items-center mt-[50px] font-bold">
+      <h1 class="text-2xl text-[#4D869C]">
+        Welcome <span id="userName"> </span> <i>👋🏻</i>
+      </h1>
+      <div class="bg-white rounded-xl mt-[50px] w-[800px] flex flex-col items-center">
+        <div class="bg-[#4D869C] mt-[20px] rounded-lg h-[180px] w-[700px] flex justify-center items-center ">
+          <p class="text-white text-xl px-6" id="question">Q<span id="count">1</span>. Which Soccer team won the FIFA World Cup the first time in 2019 please give the correct answer?</p>
+        </div>
+        <div class="mt-[50px] flex flex-col gap-5 justify-center " id= "buttonContainer">
+          <div class="border h-[50px] w-[500px] flex items-center justify-center rounded-md hover:scale-105 transition-all  hover:bg-[#7AB2B2]  hover:text-white" id="option1">Spain</div>
+          <div class="border h-[50px] w-[500px] flex items-center justify-center rounded-md hover:bg-[#7AB2B2] hover:text-white" id="option2">Japan</div>
+          <div class="border h-[50px] w-[500px] flex items-center justify-center rounded-md hover:bg-[#7AB2B2] hover:text-white" id="option3">Brazil</div>
+          <div class="border h-[50px] w-[500px] flex items-center justify-center  rounded-md hover:bg-[#7AB2B2] hover:text-white" id="option4">Argentina</div>
+        </div>
+       
+        <div class="flex mt-[80px] space-x-6 mb-[50px] ">
+          <div class="flex justify-center bg-[#CDE8E5] w-[150px]  h-[40px]  rounded-md hover:scale-105"> 
+            <button id="answered">
+            Answered <span id="number">1</span>/10
+          </button></div>
+         <!--<div class="flex justify-center bg-[#CDE8E5] w-[150px]  h-[40px]  rounded-md hover:scale-105"> 
+            <button class="">
+            Skip
+            <i class="fa-solid fa-xmark" style="color: #4d869c;"></i>          
+          </button></div>-->
+          <div class="bg-[#CDE8E5] w-[150px]  h-[40px]  rounded-md flex justify-center hover:scale-105" >
+            <button class=""  id="next">
+              Next
+              <i class="fa-solid fa-arrow-right" style="color: #4d869c;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script2.js"></script>
+</html>

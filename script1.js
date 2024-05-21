@@ -11,7 +11,7 @@ button_container.addEventListener("click",(e)=>{
     if(e.target.tagName=="BUTTON")
     {
         if(previousClickedButton!==null){
-            previousClickedButton.style.backgroundColor="#7AA2E3"
+            previousClickedButton.style.backgroundColor="#7AB2B2"
         }
         
         let button_id=e.target.id;
@@ -20,7 +20,7 @@ button_container.addEventListener("click",(e)=>{
         //-------------------
         activeState=button_element;
         if(activeState==previousClickedButton) {
-            button_element.style.backgroundColor='#7AA2E3'
+            button_element.style.backgroundColor='#7AB2B2'
             activeState=null;
         }
         else{
@@ -31,15 +31,19 @@ button_container.addEventListener("click",(e)=>{
 })
 
 getStarted.addEventListener("click",async(e)=>{
-    const userName=document.getElementById("name")
+    let userName=document.getElementById("name")
+    console.log(`The user name before entering the values is ${userName}`)
     console.log(`active state is ${activeState}`)
 
-    if(userName.value.trim()==null || activeState==null)
+  
+    if((userName.value=== null || userName.value.trim() === '') && activeState==null)
     {
-        alert("Please enter the value and select the category")
+        alert("Please enter the values")
         e.preventDefault();
     }
-    else{
+   
+     
+    else {
         localStorage.setItem('name',userName.value.trim())
         localStorage.setItem('category', activeState.id)
         console.log(localStorage.getItem('name'))
@@ -55,8 +59,8 @@ async function apiCall(){
   let apiUrl;
   if(category=="history")
     apiUrl="https://opentdb.com/api.php?amount=10&category=23&difficulty=easy&type=multiple";
-  else if(category=="sports")
-    apiUrl="https://opentdb.com/api.php?mount=10&category=21&difficulty=easy&type=multiple";
+  else if(category=="books")
+    apiUrl="https://opentdb.com/api.php?amount=10&category=10&difficulty=easy&type=multiple";
   else if(category=="gk")
     apiUrl="https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple";
   else if(category=="geography")
@@ -71,7 +75,7 @@ async function apiCall(){
   try {
     const parsedData = await helper(apiUrl);
 } catch (error) {
-    console.error('Error aya bhai:', error);
+    console.error('Error', error);
    
 }
 }
